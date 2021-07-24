@@ -19,16 +19,16 @@
 
 <body>
   <!--header-->
-  <header id="site-header" class="fixed-top">
+  <header id="site-header" class="fixed-top"> 
     <div class="container">
       <nav class="navbar navbar-expand-lg stroke">
-        <h1><a class="navbar-brand mr-lg-5" href="index.html">
+        <!-- <h1><a class="navbar-brand mr-lg-5" href="index.html">
             Traversal
-          </a></h1>
-        <!-- if logo is image enable this   
+          </a></h1> -->
+         <!-- if logo is image enable this    -->
       <a class="navbar-brand" href="#index.html">
-          <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-      </a> -->
+          <img src="assets/images/PicsArt 02.png" alt="Your logo" title="Your logo" style="height:85px;" />
+      </a> 
         <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
           data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
           aria-label="Toggle navigation">
@@ -46,7 +46,16 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Destinations</a>
+              <a class="nav-link" href="destination.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Video Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Youtube Videos</a>
             </li>
    
             <li class="nav-item">
@@ -81,9 +90,9 @@
   <section class="w3l-about-breadcrumb text-left">
     <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
       <div class="container py-2">
-        <h2 class="title">About Us</h2>
+        <h2 class="title">About Me</h2>
         <ul class="breadcrumbs-custom-path mt-2">
-          <li><a href="#url">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> About </li>
         </ul>
       </div>
@@ -94,11 +103,11 @@
   <section class="w3l-cta4 py-5">
       <div class="container py-lg-5">
         <div class="ab-section text-center">
-          <h6 class="sub-title">About Us</h6>
+          <h6 class="sub-title">About Me</h6> 
           <h3 class="hny-title">Travel to make memories all around the world.</h3>
           <p class="py-3 mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt laboriosam ducimus, odio
             aspernatur fugiat minima blanditiis dignissimos.</p>
-            <a href="services.html" class="btn btn-style btn-primary">Read More</a>
+            <a href="services.html" class="btn btn-style btn-success">Read More</a>
         </div>
         <div class="row mt-5">
           <div class="col-md-9 mx-auto">
@@ -113,7 +122,7 @@
     <div class="container py-lg-5">
       <div class="row">
         <div class="col-lg-6 content-6-left pr-lg-5">
-          <h6 class="sub-title">Why Choose Us</h6>
+          <h6 class="sub-title">Why Choose Travel</h6>
           <h3 class="hny-title">Life begins at the end of your comfort zone.</h3>
         </div>
         <div class="col-lg-6 content-6-right mt-lg-0 mt-4">
@@ -121,7 +130,7 @@
             aspernatur fugiat minima blanditiis dignissimos.</p>
             <p class="mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum labore sed, veniam nisi sunt laboriosam ducimus, odio
               aspernatur fugiat minima blanditiis dignissimos.</p>
-              <a href="services.html" class="btn btn-style btn-primary mt-4">Read More</a>
+              <a href="services.html" class="btn btn-style btn-success mt-4">Read More</a>
         </div>
       </div>
     </div>
@@ -162,7 +171,7 @@
           <div class="col-lg-4 col-6 stats_info counter_grid text-left">
             <span class="fa fa-smile-o"></span>
             <p class="counter">1730</p>
-            <h4>Happy Customers</h4>
+            <h4>Total destinations</h4>
           </div>
           <div class="col-lg-4 col-6 stats_info counter_grid1 text-left">
             <span class="fa fa-users"></span>
@@ -180,7 +189,7 @@
   </section>
   <!-- //stats -->
   <!-- team -->
-  <section class="w3l-team" id="team">
+  <!-- <section class="w3l-team" id="team">
     <div class="team-block py-5">
       <div class="container py-lg-5">
         <div class="title-content text-center mb-lg-3 mb-4">
@@ -275,7 +284,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- //team -->
 
   <!--/w3l-footer-29-main-->
@@ -333,7 +342,7 @@
           </div>
           <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
             <div class="columns text-lg-left text-center">
-              <p>&copy; 2020 Bike Riding Lovers. All rights reserved.Design by <a href="https://w3layouts.com/" target="_blank">
+              <p>&copy; 2020 Bike Riding Lovers. All rights reserved. <a href="https://w3layouts.com/" target="_blank">
                 </a>
               </p>
             </div>
@@ -430,7 +439,16 @@
   <!--//MENU-JS-->
 
   <script src="assets/js/bootstrap.min.js"></script>
-
+  <script src="assets/js/SmoothScroll.min.js"></script>
+  <!-- smooth scrolling -->
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">Video Gallery</div>
+
+        <div class="video-container">
+            <div class="video">
+                <video src="assets/redtacton.mp4" ></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/Simple Parallax Scrolling Effect with CSS & Vanilla Javascript.mp4"></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/videoplayback (4).mp4"></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/videoplayback (5).mp4"></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/videoplayback.mp4"></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/redtacton.mp4"></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/Simple Parallax Scrolling Effect with CSS & Vanilla Javascript.mp4" controls></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/videoplayback.mp4"></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/videoplayback (4).mp4" controls></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/redtacton.mp4" controls></video>
+            </div>
+
+            <div class="video">
+                <video src="assets/redtacton.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var video = document.querySelectorAll('video')
+        video.forEach(play => play.addEventListener('click', () => {
+            play.classList.toggle('active')
+
+
+            if (play.paused) {
+                play.play();
+
+
+
+            } else {
+                play.pause()
+                play.currentTime = 0;
+
+
+            }
+
+        }))
+
+
+
+    </script>
+</body>
+
+</html>
